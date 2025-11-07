@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NEOCITY // GHOSTWAVE</title>
+    <meta name="description" content="Fictional cyberpunk recruitment portal with hacking terminal mini-game" />
+
+    <!-- Preload critical fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Fira+Code:wght@400;600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Prevent FOUC -->
+    <style>
+      :root {
+        --bg: #0b0c10;
+        --cyan: #00f0ff;
+        --magenta: #ff2dd4;
+        --violet: #7b3cff;
+        --holo: #ffd24d;
+        --muted: #9aa0a6;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        background: var(--bg);
+        color: var(--cyan);
+        font-family: 'Fira Code', monospace;
+        overflow-x: hidden;
+      }
+
+      #root {
+        width: 100vw;
+        height: 100vh;
+      }
+
+      /* Loading state */
+      .loading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background: var(--bg);
+        color: var(--cyan);
+        font-family: 'Orbitron', monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="loading">INITIALIZING NEURAL INTERFACE...</div>
+    </div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
